@@ -1,0 +1,31 @@
+<div class="navbar">
+  <div class="navbar-container">
+    <%= image_tag "logo.png", id: "logo" %>
+    <!-- ligne ci-dessus remplace "<img src="images/logo.png" alt="" id="logo">" -->
+
+
+    <div class="navbar-right hidden-xs">
+      <a href="">Un </a>
+
+      <!-- lien vers la page 'Team' = remplace :  <a href="">Meet the Team</a> -->
+      <%= link_to "Meet the team", "about.html" %>
+      <div class="dropdown">
+
+        <!-- balise image_tag pour remplacer : -->
+        <img src="https://unsplash.it/50/50" alt="" class="avatar dropdown-toggle" id="profile-dropdown" data-toggle="dropdown" area-haspopup="true" area-expanded="true">
+        <ul class="dropdown-menu" aria-labelledby="profile-dropdown">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+
+        </ul>
+      </div>
+    </div>
+    <div class="dropdown  visible-xs">
+      <i class="fa fa-bars dropdown-toggle" id="menu-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></i>
+      <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="menu-dropdown">
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Another action</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
